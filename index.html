@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hello Stamford</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="promoting stamford">
+    <meta name="keywords" content="Hello stamford">
+    <meta name="author" content="medi katamba">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Sedgwick+Ave&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Sedgwick+Ave&display=swap"></noscript>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/nav.css" />
+
+    <script src="jscript/script.js" defer></script>
+    <script src="jscript/nav.js" defer></script>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <script src="app.js" defer></script>
+</head>
+<body>
+<div class="Container">
+     <div class="Header">
+        <div class="HeaderText">
+            <div id="Logo">
+                <img src="images/stamfd1.png" alt="Hello stsamford" />
+            </div>
+        
+        </div>
+    </div>
+
+   
+<div class="topnav" id="myTopnav">
+  
+<a href="index.html"><i class="fas fa-home"></i> HOME</a>
+  <a href="food.html"><i class="fas fa-utensils"></i> FOOD & DRINK</a>
+          <a href="places.html"><i class="fas fa-city"></i> PLACES TO VISIT</a>
+            <a href="history.html"><i class="fas fa-history"></i> HISTORY</a>
+            <a href="things.html"><i class="fas fa-users"></i> ACTIVITIES</a>
+          <a href="contact.html"><i class="fas fa-comment"></i> CONTACT US</a>
+            <a href="video.html"><i class="fa-solid fa-video"></i> CAPTURE A MOMENT</a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
+   
+
+    <div class="TopHeader">
+        <img src="images/stamford2.jpg" alt="Background showing stamford hall" />
+        
+            
+            </div>
+        <div class="PageContent">
+   <div id="NotificationPrompt" align="center"> 
+            <button id="EnableNotificationsButton">Click Here to Enable Notifications</button>
+            <h3 align="center">DISCOVER STAMFORD </h3>
+    <div class="map">
+        <img src="./images/map.jpg" align="left"  alt="map Stamford"  height="400" sizes="(max-width: 100%) , " width="auto"  style="visibility: visible;">					</div></p>
+        
+    </div>
+    <p>For anyone who has visited before, it's no surprise that the town of Stamford, on the edge of Cambridgeshire, has been named one of the best places to live in 2022. In their annual listing of best places to live across the country, The Times has listed Stamford as the best place to live in the Midlands  <strong><a >Stamford  Water</a></strong> offers a multitude of leisure pursuits including <strong><a >watersports</a></strong>, <strong><a >cycling</a></strong>, <strong><a >fishing</a></strong> and <strong><a >bird watching</a></strong>, while Stamford’s many attractive <strong><a >villages</a></strong>, set in the wonderful English countryside, 
+      are home to picture postcard cottages and traditional <a><strong>country pubs</strong></a>.</p>
+      
+  <p>For anyone who has visited before, it's no surprise that the town of Stamford, on the edge of Cambridgeshire, has been named one of the best places to live in 2022. In their annual listing of best places to live across the country, The Times has listed Stamford as the best place to live in the Midlands  <strong><a >Stamford  Water</a></strong> offers a multitude of leisure pursuits including <strong><a >watersports</a></strong>, <strong><a >cycling</a></strong>, <strong><a >fishing</a></strong> and <strong><a >bird watching</a></strong>, while Stamford’s many attractive <strong><a >villages</a></strong>, set in the wonderful English countryside, 
+      are home to picture postcard cottages and traditional For anyone who has visited before, it's no surprise that the town of Stamford, on the edge of Cambridgeshire, has been named one of the best places to live in 2022.</p>
+    </div>
+</div>
+<br>
+<div class="cordinates" align="center">
+<h3>STAMFORD CORDINATES LOCATOR</h3>
+
+<button onclick="getLocation()">CLICK TO GET YOUR CURRENT CORDINATES</button>
+<br>
+
+<p id="demo"></p>
+</div>
+
+<script>
+const x = document.getElementById("demo");
+
+function getLocation() {
+  try {
+    navigator.geolocation.getCurrentPosition(showPosition);
+  } catch {
+    x.innerHTML = err;
+  }
+}
+
+function showPosition(position) {
+  x.innerHTML = "Latitude: " + position.coords.latitude + 
+  "<br>Longitude: " + position.coords.longitude;
+  
+
+  document.getElementById("mapholder").innerHTML = "<img src='"+img_url+"'>";
+}
+</script>
+<br>
+<br>
+
+           <br>
+           <div class="container1" align="center">
+        
+             <h3>CHECK THE WEATHER</h3>
+            </a>
+            <div class="container">
+              <input type="text" class="inputvalue" placeholder="Enter Your City">
+              <input type="submit" value="Submit" class="btn">
+            </div>
+            <div class="display">
+              <h2 class="city"></h2>
+              <h3 class="temp"></h3>
+              <h3 class="desc"></h3>
+          
+            </div>
+            </div>
+          <br>
+          <br>
+
+            <div class="cards">
+                <div class="card">
+                  <a href="food.html"><header>
+                    <h2>FOOD&DRINK</h2>
+                  </header>
+              
+                  <img src="images/fdd.jpg" alt="food">
+                  <div class="body">
+                    <p>Food for thought.</p>
+                  </div></a>
+                </div>
+                
+              
+                <div class="card">
+                  <a href="places.html"><header>
+                    <h2>PLACES TO VISIT</h2>
+                  </header>
+              
+                  <img src="images/pp.jpg" alt="Bristol harbour">
+                  <div class="body">
+                    <p>Avariety of places to visit .</p>
+                  </div></a>
+                  
+               
+                </div> 
+
+                <div class="card">
+                  <a href="history.html">
+                <header>
+                  <h2>HISTORY</h2>
+                </header>
+            
+                <img src="images/hhh.jpg" alt="Funfair">
+                <div class="body">
+                  <p>Stamford full of history.</p>
+                </div>
+              </a>
+              </div>
+
+              <div class="card">
+                <a href="contact.html">
+              <header>
+                <h2>CONTACT US</h2>
+              </header>
+          
+              <img src="images/cc.jpg" alt="Funfair">
+              <div class="body">
+                <p>For any inquiries.</p>
+              </div>
+            </a>
+            </div>
+
+            <div class="card">
+              <a href="video.html">
+            <header>
+              <h2>CAPTURE MEMORIES</h2>
+            </header>
+        
+            <img src="images/sel.png" alt="Funfair">
+            <div class="body">
+              <p>Here we have balloons getting tangled up with a funfair.</p>
+            </div>
+          </a>
+          </div>
+         
+
+          <div class="card">
+                  <a href="things.html">
+                <header>
+                  <h2>ACTIVITIES</h2>
+                </header>
+            
+                <img src="images/things1.jpg" alt="Funfair">
+                <div class="body">
+                  <p>Here we have balloons getting tangled up with a funfair.</p>
+                </div>
+              </a>
+              </div>
+              </div>
+              
+
+              <div class="wrapper" align="center">
+                <a href="#" class="icon facebook">
+                  <div class="tooltip">Facebook</div>
+                  <span><i class="fab fa-facebook-f"></i></span>
+                </a>
+                <a href="#" class="icon twitter">
+                  <div class="tooltip">Twitter</div>
+                  <span><i class="fab fa-twitter"></i></span>
+                </a>
+                <a href="#" class="icon instagram">
+                  <div class="tooltip">Instagram</div>
+                  <span><i class="fab fa-instagram"></i></span>
+                </a>
+                <a href="#" class="icon github">
+                  <div class="tooltip">Github</div>
+                  <span><i class="fab fa-github"></i></span>
+                </a>
+                <p>Copyright MK 2022
+                
+              </div>
+</div>
+</body>
+</html>
